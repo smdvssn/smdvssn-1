@@ -9,58 +9,67 @@
 </head>
 <body class="bg-orange-50 text-gray-800">
 
-  <!-- Header Include -->
+  <!-- Header Placeholder (Optional Include via JS) -->
   <div id="header-placeholder"></div>
 
   <!-- Members Section -->
   <section class="py-12 px-6 md:px-16 bg-white">
-    <h2 class="text-3xl font-bold text-center bhagwa-text mb-10" data-hi="हमारे सदस्य" data-en="Our Members">हमारे सदस्य</h2>
+    <h2 class="text-3xl font-bold text-center bhagwa-text mb-6">हमारे सदस्य</h2>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- 🔍 Search Box -->
+    <div class="flex justify-center mb-10">
+      <input 
+        type="text" 
+        id="memberSearch" 
+        placeholder="सदस्य का नाम खोजें..." 
+        class="border border-orange-300 rounded-lg px-4 py-2 w-full md:w-1/2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+      >
+    </div>
 
-      <!-- Member Card Template -->
+    <!-- Members Grid -->
+    <div id="memberGrid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Member Cards -->
       <div class="card text-center p-6">
         <img src="assets/img/nirmal.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="संत श्री गया प्रसाद जी" data-en="Sant Shri Gaya Prasad Ji">संत श्री गया प्रसाद जी</h3>
-        <p class="text-gray-600" data-hi="संस्थापक एवं अध्यक्ष" data-en="Founder & President">संस्थापक एवं अध्यक्ष</p>
+        <h3 class="text-xl font-semibold">संत श्री गया प्रसाद जी</h3>
+        <p class="text-gray-600">संस्थापक एवं अध्यक्ष</p>
       </div>
 
       <div class="card text-center p-6">
         <img src="assets/img/vedant.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="श्री वेदांत जी" data-en="Shri Vedant Ji">श्री वेदांत जी</h3>
-        <p class="text-gray-600" data-hi="सचिव" data-en="Secretary">सचिव</p>
+        <h3 class="text-xl font-semibold">श्री वेदांत जी</h3>
+        <p class="text-gray-600">सचिव</p>
       </div>
 
-      
       <div class="card text-center p-6">
         <img src="assets/img/ambesh.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="श्री अंबेश तिवारी जी" data-en="Shri Ambesh Tiwari Ji">श्री अंबेश तिवारी जी</h3>
-        <p class="text-gray-600" data-hi="संगठन मंत्री" data-en="Organizing Secretary">संगठन मंत्री</p>
+        <h3 class="text-xl font-semibold">श्री अंबेश तिवारी जी</h3>
+        <p class="text-gray-600">संगठन मंत्री</p>
       </div>
 
       <div class="card text-center p-6">
         <img src="assets/img/pungulaal.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="श्री पुंगुलाल महाराज जी" data-en="Shri Pungulaal Maharaj ji">श्री पुंगुलाल महाराज जी</h3>
-        <p class="text-gray-600" data-hi="कोषाध्यक्ष" data-en="Treasurer">कोषाध्यक्ष</p>
+        <h3 class="text-xl font-semibold">श्री पुंगुलाल महाराज जी</h3>
+        <p class="text-gray-600">कोषाध्यक्ष</p>
       </div>
 
       <div class="card text-center p-6">
         <img src="assets/img/member4.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="श्री नीरज सिंह" data-en="Shri Neeraj Singh">श्री नीरज सिंह</h3>
-        <p class="text-gray-600" data-hi="प्रचार प्रमुख" data-en="Public Relations Head">प्रचार प्रमुख</p>
+        <h3 class="text-xl font-semibold">श्री नीरज सिंह</h3>
+        <p class="text-gray-600">प्रचार प्रमुख</p>
       </div>
 
-      <!-- Add more members below as needed -->
       <div class="card text-center p-6">
         <img src="assets/img/member5.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="श्री मनीष कुमार" data-en="Shri Manish Kumar">श्री मनीष कुमार</h3>
-        <p class="text-gray-600" data-hi="सदस्य" data-en="Member">सदस्य</p>
+        <h3 class="text-xl font-semibold">श्री मनीष कुमार</h3>
+        <p class="text-gray-600">सदस्य</p>
       </div>
 
       <div class="card text-center p-6">
         <img src="assets/img/member6.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold" data-hi="श्रीमती कुसुमलता देवी" data-en="Smt. Kusumlata Devi">श्रीमती कुसुमलता देवी</h3>
-        <p class="text-gray-600" data-hi="सदस्य" data-en="Member">सदस्य</p>
+        <h3 class="text-xl font-semibold">श्रीमती कुसुमलता देवी</h3>
+        <p class="text-gray-600">सदस्य</p>
       </div>
 
     </div>
@@ -68,9 +77,25 @@
 
   <!-- Footer -->
   <footer class="bhagwa-bg text-white text-center p-6 mt-10">
-    <p data-hi="© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास" data-en="© 2025 Shree Malook Das Vishva Seva Sansthan Nyas">© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास</p>
-    <p class="text-sm" data-hi="सर्वाधिकार सुरक्षित" data-en="All rights reserved">सर्वाधिकार सुरक्षित</p>
+    <p>© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास</p>
+    <p class="text-sm">सर्वाधिकार सुरक्षित</p>
   </footer>
+
+  <!-- 🔍 Client-Side Search Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('memberSearch');
+      const cards = document.querySelectorAll('#memberGrid .card');
+
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        cards.forEach(card => {
+          const name = card.querySelector('h3').textContent.toLowerCase();
+          card.style.display = name.includes(query) ? '' : 'none';
+        });
+      });
+    });
+  </script>
 
   <script src="assets/js/main.js"></script>
 </body>
